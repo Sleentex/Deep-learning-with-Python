@@ -403,6 +403,24 @@ def train_CNN_keras(
     num_epochs=20,
     verbose=0,
 ):
+    
+    """ 
+        Навчає мережу обертів для заданого набору даних, що міститься в навчальному каталозі.
+        Користувачі можуть просто поставити шлях до навчального каталогу та отримати повністю повністю навчену 5-рівневу згорнуту мережу.
+    
+     Аргументи:
+             train_directory: Каталог, де навчальні зображення зберігаються в окремих папках.
+                             Ці папки мають бути названі відповідно до класів.
+             target_size: цільовий розмір навчальних зображень. Кортеж, напр. (200200)
+             класи: Список Python з класами
+             batch_size: розмір партії для тренувань
+             num_epochs: кількість епох для навчання
+             num_classes: Кількість вихідних класів, які слід врахувати
+             verbose: рівень дослідженості навчання, переданий методу `fit_generator`
+     Повернення:
+             Навчена модель нетто
+    """
+    
     """
     Trains a conv net for a given dataset contained within a training directory.
     Users can just supply the path of the training directory and get back a fully trained, 5-layer, convolutional network.
