@@ -19,15 +19,18 @@ Authored and maintained by **Dr. Tirthajyoti Sarkar ([Website](https://tirthajyo
 
 ## Requirements
 * Python 3.6+
-* NumPy (`pip install numpy`)
-* Pandas (`pip install pandas`)
-* MatplotLib (`pip install matplotlib`)
-* Tensorflow (`pip install tensorflow` or `pip install tensorflow-gpu`)
+* NumPy (`pip install numpy==1.16.4`)
+* Pandas (`pip install pandas==0.25.3`)
+* MatplotLib (`pip install matplotlib==3.1.3`)
+* Tensorflow (`pip install tensorflow==1.12.0` or `pip install tensorflow-gpu`)
+* Keras (`pip install keras==2.2.5`)
+* Keract (`pip install keract==2.6.2`)
+* Jupyter (`pip install jupyter==1.0.0`)
 > Of course, to use a local GPU correctly, you need to do lot more work setting up proper GPU driver and CUDA installation. <br>
 > If you are using Ubuntu 18.04, [here is a guide](https://mc.ai/tensorflow-gpu-installation-on-ubuntu-18-04/). <br>
 > If you are on Windows 10, [here is a guide](https://towardsdatascience.com/installing-tensorflow-with-cuda-cudnn-and-gpu-support-on-windows-10-60693e46e781) <br>
 > It is also highly recommended to **install GPU version in a separate virtual environment**, so as to not mess up the default system install.
-* Keras (`pip install keras`)
+
 
 **NOTE**: Most of the Jupyter notebooks in this repo are built on **[Google Colaboratory](https://colab.research.google.com/)** using **[Google GPU cluster](https://cloud.google.com/gpu/)** and a virtual machine. Therefore, you may not need to install these packages on your local machine if you also want to use Google colab. You can **directly launch the notebooks in your Google colab environment by clicking on the links provided in the notebooks** (of course, that makes a copy of my notebook on to your Google drive).
 
